@@ -17,6 +17,7 @@ class ActividadController extends BaseController
     {
 
     }
+    
     public function index(Request $request)
     {
         if ($request)
@@ -30,10 +31,12 @@ class ActividadController extends BaseController
         }
         return view('almacen.actividad.index');
     }
+
     public function create()
     {
         return view("almacen.actividad.create");
     }
+
     public function store (ActividadFormRequest $request)
     {
         $actividad=new Acticidad;

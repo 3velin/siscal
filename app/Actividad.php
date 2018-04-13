@@ -9,7 +9,7 @@ class Actividad extends Model
     //hace referencia a la tabla categoria
     protected $table='actividad';
     //el tributo que va ser llave primaria
-    protected $primariKey="idactividad";
+    protected $primaryKey="idactividad";
     public $timestamps=false;
 
     protected $fillable =[
