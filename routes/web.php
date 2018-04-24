@@ -15,7 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('almacen/actividad','ActividadController');
+Route::resource('almacen/actividad', 'ActividadController');
+Route::resource('tipoactividad', 'TipoActividadController');
+Route::post('tipoactividad/store', 'TipoActividadController@store');
+Route::resource('planinicial', 'PlanInicialController');
+Route::post('planinicial/store', 'PlanInicialController@store');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

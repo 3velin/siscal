@@ -9,5 +9,6 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 class Controller extends BaseController
 {
+    public $userName = 'Cristian Villegas';
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 }

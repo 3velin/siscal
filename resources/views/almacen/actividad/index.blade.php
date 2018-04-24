@@ -1,7 +1,7 @@
 @extends ('layouts.admin')
 @section ('contenido')
 <div class="maincenter">
-	<form  action="{{URL::asset('almacen/actividad')}}" method="post" >
+	<form  method="post" >
 		{{ csrf_field() }}
 	<div class="mdl-textfield__expandable-holder">
           <input type="text" id="searchText" name="searchText" placeholder="Valor a buscar" >

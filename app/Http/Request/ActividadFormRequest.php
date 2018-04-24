@@ -2,7 +2,7 @@
 
 namespace siscal\Http\Requests;
 
-use siscal\Http\Requests\Request;
+use Illuminate\Http\Request;
 
 class ActividadFormRequest extends Request
 {
@@ -21,11 +21,11 @@ class ActividadFormRequest extends Request
      *
      * @return array
      */
-    public function rules()
+    /*public function rules()
     {
         return [
             'nombre'=>'required|max:50',
             'periodoactividad'=>'max:256',
         ];
-    }
+    }*/
 }

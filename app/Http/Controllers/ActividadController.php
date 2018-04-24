@@ -29,7 +29,7 @@ class ActividadController extends BaseController
             ->paginate(7);
             return view('almacen.actividad.index',["actividades"=>$actividades,"searchText"=>$query]);
         }
-        return view('almacen.actividad.index');
+        return view('almacen.actividad.index', [ 'userName' => 'asd']);
     }
 
     public function create()
@@ -39,7 +39,7 @@ class ActividadController extends BaseController
 
     public function store (ActividadFormRequest $request)
     {
-        $actividad=new Acticidad;
+        $actividad= new Actividad();
         $actividad->nombre=$request->get('nombre');
         $actividad->periodoactividad=$request->get('periodoactividad');
         $actividad->condicion='1';

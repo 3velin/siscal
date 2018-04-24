@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>SISCAL | www.else.com.pe</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
@@ -244,7 +245,7 @@
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="public/img/eve-160x160.jpg" class="user-image" alt="User Image">
-              <span class="hidden-xs">Evelin Angelino</span>
+              <span class="hidden-xs">userName</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
@@ -252,7 +253,7 @@
                 <img src="public/img/eve-160x160.jpg" class="img-circle" alt="User Image">
 
                 <p>
-                  Evelin Angelino - Jefe ISCAL
+                userName - Jefe ISCAL
                   <small>Miembro desde Nov. 2012</small>
                 </p>
               </li>
@@ -289,7 +290,7 @@
           <img src="img/eve-160x160.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Evelin Angelino</p>
+          <p>UserName</p>
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
@@ -309,15 +310,14 @@
         <li class="header">ACTIVIDADES</li>
         <li class="active treeview">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Electro móvil</span>
+            <i class="fa fa-dashboard"></i> <span>Master Data</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Electro móvil 1</a></li>
-            <li><a href="index.html"><i class="fa fa-circle-o"></i> Electro móvil 2</a></li>
-            <li><a href="index.html"><i class="fa fa-circle-o"></i> Electro móvil 3</a></li>
+            <li class="active"><a href="tipoactividad"><i class="fa fa-circle-o"></i>Tipo Actividad</a></li>
+            <li><a href="planinicial"><i class="fa fa-circle-o"></i> Plan Inicial</a></li>
           </ul>
         </li>
         
